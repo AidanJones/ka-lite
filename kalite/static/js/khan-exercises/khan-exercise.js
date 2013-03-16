@@ -297,7 +297,7 @@ var Khan = (function() {
             "math": [{
                 src: urlBase + "utils/MathJax/1.1a/MathJax.js?config=KAthJax-62e7a7b628ba168df6b9cd3de8feac38"
             }, "raphael"],
-
+			
             // Load Raphael locally because IE8 has a problem with the 1.5.2 minified release
             // http://groups.google.com/group/raphaeljs/browse_thread/thread/c34c75ad8d431544
 
@@ -308,6 +308,7 @@ var Khan = (function() {
             "math-format": ["math", "expressions"],
             "polynomials": ["math", "expressions"],
             "stat": ["math"],
+			"mapie": [{src: urlBase + "utils/openlayers/lib/OpenLayers.js"}],
             "word-problems": ["math"],
             "derivative-intuition": ["jquery.mobile.vmouse"],
             "unit-circle": ["jquery.mobile.vmouse"],
@@ -1132,7 +1133,7 @@ var Khan = (function() {
 
             // We also look at the main blocks within the problem itself to override,
             // ignoring graphie and spin blocks
-            .children("[class][class!='graphie'][class!='spin']").tmplApply({attribute: "class"});
+            .children("[class][class!='mapie'][class!='graphie'][class!='spin']").tmplApply({attribute: "class"});
 
         debugLog("ran tmplApply to vars and main elements");
 
@@ -1608,6 +1609,7 @@ var Khan = (function() {
 
                     if (thisSlide.data("guess") !== undefined && $.isFunction(validator.showCustomGuess)) {
                         KhanUtil.currentGraph = $(realWorkArea).find(".graphie").data("graphie");
+						KhanUtil.currentMap = $(realWorkArea).find(".mapie").data("mapie");
                         validator.showCustomGuess(thisSlide.data("guess"));
                         MathJax.Hub.Queue(recordState);
                     } else {

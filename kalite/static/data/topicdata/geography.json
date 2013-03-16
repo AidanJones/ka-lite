@@ -1,0 +1,32 @@
+[
+   {
+      "author_name" : "Aidan Jones",
+      "backup_timestamp" : "2012-12-12T19:54:32Z",
+      "covers" : [],
+      "creation_date" : "2011-10-20T18:49:27Z",
+      "custom_stacks" : [],
+      "description" : null,
+      "display_name" : "Map Test",
+      "file_name" : null,
+      "guaranteed_file_name" : "map_test.html",
+      "h_position" : 1,
+      "image_url" : "http://ka-exercise-screenshots.s3-website-us-east-1.amazonaws.com/telling_time_0.5.png",
+      "image_url_256" : "http://ka-exercise-screenshots.s3-website-us-east-1.amazonaws.com/telling_time_0.5_256.png",
+      "ka_url" : "http://www.khanacademy.org/exercise/telling_time_0.5",
+      "kind" : "Exercise",
+      "live" : true,
+      "name" : "map_test",
+      "node_slug" : "e/map_test",
+      "prerequisites" : [],
+      "pretty_display_name" : null,
+      "progress_key" : "e324885543",
+      "relative_url" : "/exercise/map_test",
+      "seconds_per_fast_problem" : 6.0,
+      "sha1" : "09e10b3017bf6cfbc0f3543ac1a549f8bc22adc7",
+      "short_display_name" : "Map Test",
+      "summative" : false,
+      "tags" : [],
+      "thumbnail_image" : "https://khan-academy.appspot.com/images/power-mode/badges/telling-time-250x250.png?8",
+      "v_position" : 11
+   }
+]
